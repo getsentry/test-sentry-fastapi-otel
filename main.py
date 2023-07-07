@@ -13,6 +13,8 @@ def main(value):
         dsn="https://e0f002c997e841828595584ace084210@o447951.ingest.sentry.io/4505160406990848",
         debug=True,
         release="0.0.0",
+        traces_sample_rate=1.0,
+        # instrumenter="otel",
     )
 
     sentry_sdk.capture_message("main.py started")
