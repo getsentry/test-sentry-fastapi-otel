@@ -14,16 +14,11 @@ def main(value):
         debug=True,
         release="0.0.0",
         traces_sample_rate=1.0,
-        # instrumenter="otel",
     )
 
     sentry_sdk.capture_message("main.py started")
 
-    headers = {
-        "baggage": "other-vendor-value-1=foo;bar;baz,other-vendor-value-2=foo;bar;",
-    }
-
-    r = requests.get(f"{SERVER_URL}/{value}", headers=headers)
+    r = requests.get(f"{SERVER_URL}/{value}")
 
     print()
     print("OUTPUT of main.py:")
