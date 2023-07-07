@@ -1,0 +1,5 @@
+procs:
+  microservice:
+    shell: "python microservice.py"
+  server:
+    shell: "python server.py"

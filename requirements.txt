@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+
+requests 
+black
+ipdb
+
+# OTel
+opentelemetry-api
+opentelemetry-sdk
+
+# Sentry
+-e ../sentry-python/
